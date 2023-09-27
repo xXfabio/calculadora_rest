@@ -14,11 +14,10 @@ public class MathController {
 
     private final AtomicLong counter =new AtomicLong();
 
-    @RequestMapping(value = "/sum/{operador}/{numberOne}/{numberTwo}", method=RequestMethod.GET)
+    @RequestMapping(value = "/sum/{numberOne}/{numberTwo}", method=RequestMethod.GET)
     public Double sum(
         @PathVariable(value = "numberOne") String numberOne,
-        @PathVariable(value = "numberTwo") String numberTwo,
-        @PathVariable(value = "operador") String operador
+        @PathVariable(value = "numberTwo") String numberTwo
     )throws Exception{
         if(!isNumeric(numberOne) || !isNumeric(numberOne)){
             throw new UnsupportedMathOperationException("Informe o valor!");
