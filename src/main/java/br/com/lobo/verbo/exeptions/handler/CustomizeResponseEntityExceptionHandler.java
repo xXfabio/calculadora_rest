@@ -1,4 +1,4 @@
-package br.com.lobo.calculadora.exeptions.handler;
+package br.com.lobo.verbo.exeptions.handler;
 
 import java.util.Date;
 
@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
-import br.com.lobo.calculadora.exeptions.ExceptionResponse;
-import br.com.lobo.calculadora.exeptions.UnsupportedMathOperationException;
+import br.com.lobo.verbo.exeptions.ExceptionResponse;
+import br.com.lobo.verbo.exeptions.UnsupportedMathOperationException;
 
 @ControllerAdvice
 @RestController

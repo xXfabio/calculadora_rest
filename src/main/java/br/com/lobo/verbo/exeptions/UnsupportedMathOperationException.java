@@ -1,4 +1,4 @@
-package br.com.lobo.calculadora.exeptions;
+package br.com.lobo.verbo.exeptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
